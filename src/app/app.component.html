@@ -1,5 +1,14 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+  <h1>
+  Lista Komentarzy {{title}}!
+  </h1>
+  </div>
+  <app-comment-list> </app-comment-list>
+
+
+
+
+<!-- <div style="text-align:center">
   <h1>{{ title }}</h1>
   <h3 *ngIf="comments.length === 0">Brak komentarzy</h3>
   <h3 *ngIf="comments.length > 0" [ngStyle]="{'background-color': getCounterColor(comments)}">Licznik: {{ comments.length }}</h3>
@@ -11,6 +20,7 @@
     </li>
   </ul>
 
+  <app-comment-list></app-comment-list>
   <p>
     <a class="btn btn-primary" data-toggle="collapse" href="#contentId" aria-expanded="false" aria-controls="contentId">
       Show
@@ -19,5 +29,5 @@
   <div class="collapse" id="contentId">
     
   </div>
-</div>
+</div> -->
 

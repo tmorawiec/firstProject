@@ -1,0 +1,10 @@
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Lista komentarzy</h4>
+    <div class="form-group">
+      <app-comment *ngFor="let comment of comments" [komentarz]="comment" (UsunComment)="UsunComment($event)">
+      </app-comment>
+    </div>
+  </div>
+</div>
+<app-new-comment (commentCreated)="DodajComment($event)"></app-new-comment>
